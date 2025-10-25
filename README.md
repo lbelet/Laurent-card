@@ -37,7 +37,7 @@ laurent-card/
 ## 🧑‍💻 Auteur
 Laurent Belet — Développeur, Malsky Atelier Digital  
 📧 Email : laurent@malsky.ch  
-🔗 LinkedIn : https://www.linkedin.com/in/laurentbelet
+🔗 LinkedIn : https://www.linkedin.com/in/laurent-belet
 
 ## ⚖️ Licence
 MIT — Réutilisable librement avec mention de l’auteur.  
