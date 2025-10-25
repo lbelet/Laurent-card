@@ -31,8 +31,8 @@ https://laurentbelet.github.io/laurent-card/
 
 ## 🛠️ Structure du projet
 laurent-card/
-├── index.html     # Page principale (HTML + JS)
-└── README.md      # Ce fichier
+├── index.html
+└── README.md
 
 ## 🧑‍💻 Auteur
 Laurent Belet — Développeur, Malsky Atelier Digital  
@@ -40,6 +40,4 @@ Laurent Belet — Développeur, Malsky Atelier Digital
 🔗 LinkedIn : https://www.linkedin.com/in/laurent-belet
 
 ## ⚖️ Licence
-MIT — Réutilisable librement avec mention de l’auteur.  
-En savoir plus sur la licence MIT
-
+MIT — Réutilisable librement avec mention de l’auteur.
