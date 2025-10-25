@@ -3,7 +3,7 @@ vcard
 # 💳 Carte de visite NFC — Laurent Belet
 
 [![Licence](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Online-blue)](https://laurentbelet.github.io/laurent-card/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Online-blue)](https://lbelet.github.io/Laurent-card/)
 
 Carte de visite numérique compatible **iPhone** et **Android**, accessible via **NFC**, **QR code**, ou lien direct.
 
@@ -11,14 +11,14 @@ Carte de visite numérique compatible **iPhone** et **Android**, accessible via 
 
 ## 🌐 Lien public
 
-[https://laurentbelet.github.io/laurent-card/](https://laurentbelet.github.io/laurent-card/)
+[https://lbelet.github.io/Laurent-card/](https://lbelet.github.io/Laurent-card/)
 
 ---
 
 ## 🚀 Utilisation rapide
 
 1. Écrire l’**URL complète** sur la puce NFC avec **NFC Tools** :  
-https://laurentbelet.github.io/laurent-card/
+https://lbelet.github.io/Laurent-card/
 
 2. Passer un smartphone dessus → la page s’ouvre.  
 
