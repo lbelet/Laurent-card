@@ -35,6 +35,12 @@
       border-radius: 8px;
       font-weight: 600;
     }
+    #message {
+      margin-top: 15px;
+      color: #007a33;
+      font-weight: 500;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -45,10 +51,13 @@
        📧 laurent@malsky.ch</p>
     <p><a href="https://www.linkedin.com/in/laurent-belet/" target="_blank">🔗 LinkedIn</a></p>
     <a id="downloadVCF" class="btn" href="#">📇 Ajouter au contact</a>
+    <div id="message">✅ Contact prêt à être importé</div>
   </div>
 
   <script>
-  document.getElementById("downloadVCF").addEventListener("click", function() {
+  document.getElementById("downloadVCF").addEventListener("click", function(e) {
+    e.preventDefault();
+
     const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Laurent Belet
@@ -60,14 +69,26 @@ EMAIL:laurent@malsky.ch
 URL:https://malsky.ch
 END:VCARD`;
 
-    const blob = new Blob([vcard], {type: "text/vcard;charset=utf-8"});
-    const url = URL.createObjectURL(blob);
+    // Créer un fichier .vcf compatible iPhone/Android
+    const blob = new Blob([vcard], { type: "text/vcard" });
+    const file = new File([blob], "laurent-belet.vcf", { type: "text/vcard" });
+    const url = URL.createObjectURL(file);
+
+    // Télécharger le fichier
     const a = document.createElement("a");
     a.href = url;
     a.download = "laurent-belet.vcf";
+    a.style.display = "none";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+
+    // Message de confirmation
+    const msg = document.getElementById("message");
+    msg.style.display = "block";
+    setTimeout(() => { msg.style.display = "none"; }, 4000);
+
+    // Nettoyage
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
   </script>
